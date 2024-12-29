@@ -8,6 +8,7 @@
       python = ["isort" "black"];
       sh = ["shfmt" "shellcheck"];
       yaml = ["yamlfmt"];
+      nginx = ["nginxfmt"];
     };
 
     formatters = with pkgs; {
@@ -16,11 +17,11 @@
       alejandra = {command = "${lib.getExe alejandra}";};
       jq = {command = "${lib.getExe jq}";};
       prettierd = {command = "${lib.getExe prettierd}";};
-      stylua = {command = "${lib.getExe stylua}";};
+      # stylua = {command = "${lib.getExe stylua}";};
       shellcheck = {command = "${lib.getExe shellcheck}";};
       shfmt = {command = "${lib.getExe shfmt}";};
-      yamlfix = {command = "${lib.getExe yamlfix}";};
       yamlfmt = {command = "${lib.getExe yamlfmt}";};
+      nginxfmt = {command = "${lib.getExe nginx-config-formatter}";};
     };
 
     format_on_save =

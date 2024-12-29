@@ -1,17 +1,19 @@
-# Nixvim template
+# NixVim flake for Os76
 
-This template gives you a good starting point for configuring nixvim standalone.
+Based on NixVim standalone flake template:
 
-## Configuring
+- [NixVim](https://nix-community.github.io/nixvim/index.html)
+- [NixVim - Standalone usage](https://nix-community.github.io/nixvim/user-guide/install.html#standalone-usage)
+- [Flakes - Enable flakes temporarily](https://nixos.wiki/wiki/flakes#Enable_flakes_temporarily)
+- [Flakes - Other Distros, without Home-Manager](https://nixos.wiki/wiki/flakes#Enable_flakes_temporarily)
 
-To start configuring, just add or modify the nix files in `./config`.
-If you add a new configuration file, remember to add it to the
-[`config/default.nix`](./config/default.nix) file
+## Run NixVim
 
-## Testing your new configuration
-
-To test your configuration simply run the following command
+To run this version of NixVim use one of the following commands according to the context:
 
 ```
 nix run .
+
+nix run git+https://github.com/xenOs76/nixvim
+
 ```

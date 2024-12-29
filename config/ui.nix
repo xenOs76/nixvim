@@ -7,5 +7,6 @@
       enable = true;
     };
     mini.enable = true;
+    notify.enable = true;
   };
 }

@@ -9,6 +9,7 @@
         markdown = [ "vale" ];
         terraform = [ "tflint" ];
         text = [ "vale" ];
+        sh = [ "shellcheck" ];
       };
     };
     treesitter = {
